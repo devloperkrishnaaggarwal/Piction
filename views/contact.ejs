@@ -1,0 +1,66 @@
+<%- include ('header')%>
+<div class="text-center text-2xl font-bold m-3">Contact Form</div>
+
+<form method="post" action="/contact" class="p-4">
+  <div class="mb-6">
+    <label
+      for="name"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >Your name</label
+    >
+    <input
+      type="name"
+      id="name"
+      class="formInp"
+      placeholder="John Doe"
+      required=""
+      name="name"
+    />
+  </div>
+  <div class="mb-6">
+    <label
+      for="email"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >Your email</label
+    >
+    <input
+      type="email"
+      id="email"
+      class="formInp"
+      placeholder="name@gmail.com"
+      required=""
+      name="email"
+    />
+  </div>
+  <div class="mb-6">
+    <label
+      for="age"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >Your Age</label
+    >
+    <input type="number" name="age" id="age" class="formInp" required="" />
+  </div>
+  <div class="mb-6">
+    <label
+      for="text"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >Drop a message here</label
+    >
+    <textarea
+      name="text"
+      id="text"
+      class="formInp"
+      cols="30"
+      rows="5"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+  >
+    Submit
+  </button>
+</form>
+
+<%- include ('footer')%>
